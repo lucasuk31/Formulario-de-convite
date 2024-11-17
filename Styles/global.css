@@ -65,3 +65,8 @@ body {
   padding: 1.25rem;
   gap: 1.25rem;
 }
+
+aside,
+main {
+  border-radius: .75rem;
+}
