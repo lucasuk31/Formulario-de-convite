@@ -1,0 +1,57 @@
+.container {
+  min-width: 80rem;
+  height: 95vh;
+  background-color: var(--shape-background);
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.25rem;
+
+  overflow: hidden;
+
+  aside {
+    background-image: url(../Assets/Images/Background.png);
+    background-position: center;
+    background-size: cover;
+
+    header {
+      margin: 2rem;
+
+      & img {
+        max-width: 3rem;
+        aspect-ratio: 1/1;
+      }
+
+      & h1 {
+        font: var(--logo);
+        color: var(--pink);
+        margin: 1rem 0 0.25rem;
+      }
+
+      & p {
+        font: var(--body-md);
+        color: var(--text-heading);
+      }
+    }
+  }
+
+  main {
+    background-color: var(--shape-body);
+    padding: 5rem 8.125rem;
+    overflow: auto;
+
+    & h2 {
+      font: var(--heading-md);
+      color: var(--text-heading);
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+.presence-address {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
