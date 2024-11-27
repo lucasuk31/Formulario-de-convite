@@ -113,3 +113,58 @@
     background-color: var(--cyan);
   }
 }
+
+.theme-options {
+
+  label {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  & .grid-container {
+    display: grid;
+    grid-template-areas: 
+    "birthday kids graduation marriage"
+    "baby-shower bridal-shower carnival easter"
+    "midsummer-day halloween christmas other";
+
+    gap: .5rem;
+  }
+
+  & .card-inner {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 8.375rem;
+    height: 6.4375rem;
+
+    padding: .25rem;
+    border-radius: .5rem;
+    background-color: var(--shape-button);
+    cursor: pointer;
+
+    position: relative;
+
+    & input {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    & input:checked {
+    outline: .125rem solid var(--brand-light);
+    border-radius: .5rem;  
+  }
+
+    & img {
+      width: 7.875rem;
+      height: 4rem;
+    }
+
+    & label {
+      margin-top: .5rem;
+      align-self: center;
+    }
+  }
+}
