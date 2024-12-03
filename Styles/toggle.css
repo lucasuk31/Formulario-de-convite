@@ -1,12 +1,12 @@
 .checkbox-wrapper {
-  margin-top: 1.75rem;
+  display: grid;
+  gap: 1.25rem;
+  max-width: 11rem;
 
   & .checkbox-inner {
     display: flex;
     align-items: center;
     gap: .75rem;
-
-    margin-top: .75rem;
 
     .switch-container {
       position: relative;
@@ -42,7 +42,7 @@
       height: 1.5rem;
       width: 1.5rem;
       left: 0.25rem;
-      bottom: 0.25rem;
+      bottom: .25rem;
       background-color: var(--input-stroke);
       -webkit-transition: 0.4s;
       transition: 0.4s;
