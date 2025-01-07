@@ -16,6 +16,7 @@
   --heading-sm: bold 1.125rem var(--baloo-2);
 
   --open-sans: "Open Sans", sans-serif;
+  --body-lg: 600 1rem var(--open-sans);
   --body-md: 400 1rem var(--open-sans);
   --body-sm: 400 0.875rem var(--open-sans);
   --body-xs: 400 0.75rem var(--open-sans);
