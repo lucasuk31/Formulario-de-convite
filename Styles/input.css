@@ -37,3 +37,24 @@
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
+
+input {
+  &:invalid {
+    border: 1px solid var(--danger);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    font: var(--body-xs);
+    color: var(--danger);
+
+    margin-top: 0.25rem;
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+}
