@@ -1,9 +1,9 @@
-.checkbox-wrapper {
+.switch-wrapper {
   display: grid;
   gap: 1.25rem;
   max-width: 11rem;
 
-  & .checkbox-inner {
+  & .switch-inner {
     display: flex;
     align-items: center;
     gap: .75rem;

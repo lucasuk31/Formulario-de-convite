@@ -379,9 +379,9 @@
             </div>
 
             <div class="display-area invite-style">
-              <div class="checkbox-wrapper">
+              <div class="switch-wrapper">
                 <label>Estilo</label>
-                <div class="checkbox-inner">
+                <div class="switch-inner">
                   <label class="switch-container">
                     <input type="checkbox" />
                     <div class="slider round"></div>
@@ -453,9 +453,9 @@
               />
 
               <div class="error">
-                  <img src="./Assets/Icons/error.svg" alt="" />
-                  <span>Campo obrigatório</span>
-                </div>
+                <img src="./Assets/Icons/error.svg" alt="" />
+                <span>Campo obrigatório</span>
+              </div>
             </div>
 
             <div class="personal-details">
@@ -482,26 +482,45 @@
           </fieldset>
 
           <footer>
-            <hr>
+            <hr />
 
             <div class="itens">
-              <div class="accept-wrapper">
-                <input type="checkbox" name="terms" id="terms" checked>
-                <label for="terms">Li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span></label>
+              <div class="checkbox-wrapper">
+                <div class="checkbox-image"></div>
+                <input
+                  type="checkbox"
+                  name="terms"
+                  id="terms"
+                  checked
+                  required
+                />
+                <label for="terms"
+                  >Li e concordo com os <span>Termos e Condições</span> e com a
+                  <span>Política de Privacidade</span></label
+                >
               </div>
 
-              <div class="accept-wrapper">
-                <input type="checkbox" name="sale-email" id="sale-email">
-                <label for="sale-email">Aceito receber atualizações e promoções por e-mail</label>
+              <div class="checkbox-wrapper">
+                <div class="checkbox-image"></div>
+                <input type="checkbox" name="sale-email" id="sale-email" />
+                <label for="sale-email"
+                  >Aceito receber atualizações e promoções por e-mail</label
+                >
               </div>
 
-              <div class="accept-wrapper">
-                <input type="checkbox" name="sale-sms" id="sale-sms">
-                <label for="sale-sms">Aceito receber atualizações e promoções por SMS</label>
+              <div class="checkbox-wrapper">
+                <div class="checkbox-image"></div>
+                <input type="checkbox" name="sale-sms" id="sale-sms" />
+                <label for="sale-sms"
+                  >Aceito receber atualizações e promoções por SMS</label
+                >
               </div>
             </div>
 
-            <input id="submit-button" type="submit" value="Gerar convite">
+            <button class="send-form" type="submit">
+              <img src="./Assets/Icons/ticket.svg" alt="">
+              Gerar convite
+            </button>
           </footer>
         </form>
       </main>

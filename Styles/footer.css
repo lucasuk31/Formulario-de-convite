@@ -1,43 +1,70 @@
-hr {
-  border: .1px solid var(--input-stroke);
-  margin-bottom: 2.5rem;
-}
-
 footer {
-  display: grid;
+  & hr {
+    border: 0.1px solid var(--input-stroke);
+    margin-bottom: 2.5rem;
+  }
 
   & .itens {
     display: grid;
-    gap: .25rem;
-    margin-bottom: 6rem;
-
-    & .accept-wrapper{
-      font: var(--body-sm);
-      display: flex;
-      gap: .75rem;
-      align-content: center;
-
-      & span{
-        color: var(--brand-light);
-        text-decoration: underline;
-        font-weight: 600;
-        cursor: pointer;
-      }
-    }
+    gap: 0.75rem;
   }
 
-  & #submit-button{
-    max-width: 11.0625rem;
-    justify-self: end;
+  & span {
+    font-weight: 600;
+    color: var(--brand-light);
+    text-decoration: underline;
+  }
+}
 
-    font: var(--body-lg);
-    color: var(--text-heading);
+.checkbox-wrapper {
+  display: flex;
+  gap: 0.75rem;
 
-    padding: .8125rem 1.25rem;
-    border-radius: .5rem;
+  position: relative;
 
-    background-color: var(--brand-dark);
+  & [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
 
-    cursor: pointer;
+  .checkbox-image {
+    flex: 0 0 1.25rem;
+    height: 1.25rem;
+    border: solid 1px var(--input-stroke);
+    border-radius: 0.25rem;
+  }
+
+  &:has(:checked) .checkbox-image {
+    border: solid 1px var(--brand-light);
+    background-image: url(../Assets/Icons/check.png);
+    background-position: center;
+  }
+}
+
+button {
+  all: unset;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+
+  margin-top: 3rem;
+  justify-self: end;
+
+  padding: .8125rem .5rem;
+
+  width: 11.0625rem;
+  border-radius: .5rem;
+
+  background-color: var(--brand-dark);
+  font: var(--body-md);
+  color: var(--text-heading);
+
+  & img {
+    width: 1.25rem;
   }
 }
