@@ -58,3 +58,7 @@ input {
     display: none;
   }
 }
+
+input:focus {
+  outline: 1px solid var(--brand-light);
+}
