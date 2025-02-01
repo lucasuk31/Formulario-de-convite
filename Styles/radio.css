@@ -150,6 +150,10 @@
 
     position: relative;
 
+    &:hover{
+      background-color: var(--shape-hover);
+    }
+
     & input {
       all: unset;
       position: absolute;
