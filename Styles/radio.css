@@ -63,6 +63,10 @@
     border: .375rem solid var(--shape-button);
     border-radius: 50%;
     cursor: pointer;
+
+    &:hover{
+    border: .375rem solid var(--shape-hover);
+    }
   }
 
   & input:checked {
