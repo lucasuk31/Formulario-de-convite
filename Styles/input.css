@@ -61,4 +61,9 @@ input {
 
 input:focus {
   outline: 1px solid var(--brand-light);
+
+  &:invalid {
+    outline: 1px solid var(--brand-light);
+    border: none;
+  }
 }
